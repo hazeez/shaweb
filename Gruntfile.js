@@ -252,6 +252,21 @@ module.exports = function (grunt) {
       }
     },
 
+    buildcontrol: {
+    options: {
+        dir: 'dist',
+        commit: true,
+        push: true,
+        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+    },
+    heroku: {
+        options: {
+            remote: 'git@heroku.com:shanetwork.git',
+            branch: 'master'
+        }
+    }
+    },
+
     // By default, your `index.html`'s <!-- Usemin block --> will take care
     // of minification. These next options are pre-configured if you do not
     // wish to use the Usemin blocks.
@@ -312,6 +327,25 @@ module.exports = function (grunt) {
       }
     },
 
+    // Empties folders to start fresh
+    clean: {
+        dist: {
+            files: [{
+                dot: true,
+                src: [
+                    '.tmp',
+                    '<%= yeoman.dist %>/*',
+                    '!<%= yeoman.dist %>/.git{,*/}*',
+                    '!<%= yeoman.dist %>/Procfile',
+                    '!<%= yeoman.dist %>/package.json',
+                    '!<%= yeoman.dist %>/web.js',
+                    '!<%= yeoman.dist %>/node_modules'
+               ]
+            }]
+        },
+        server: '.tmp'
+    },
+
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
@@ -346,6 +380,8 @@ module.exports = function (grunt) {
       'watch'
     ]);
   });
+
+  grunt.registerTask('deploy', ['buildcontrol']);
 
   grunt.registerTask('server', function (target) {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
