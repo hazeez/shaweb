@@ -108,18 +108,23 @@ module.exports = function (grunt) {
 
     // Empties folders to start fresh
     clean: {
-      dist: {
-        files: [{
-          dot: true,
-          src: [
-            '.tmp',
-            '<%= config.dist %>/*',
-            '!<%= config.dist %>/.git*'
-          ]
-        }]
-      },
-      server: '.tmp'
+        dist: {
+            files: [{
+                dot: true,
+                src: [
+                    '.tmp',
+                    '<%= yeoman.dist %>/*',
+                    '!<%= yeoman.dist %>/.git{,*/}*',
+                    '!<%= yeoman.dist %>/Procfile',
+                    '!<%= yeoman.dist %>/package.json',
+                    '!<%= yeoman.dist %>/web.js',
+                    '!<%= yeoman.dist %>/node_modules'
+               ]
+            }]
+        },
+        server: '.tmp'
     },
+
 
     // Make sure code styles are up to par and there are no obvious mistakes
     jshint: {
@@ -327,24 +332,6 @@ module.exports = function (grunt) {
       }
     },
 
-    // Empties folders to start fresh
-    clean: {
-        dist: {
-            files: [{
-                dot: true,
-                src: [
-                    '.tmp',
-                    '<%= yeoman.dist %>/*',
-                    '!<%= yeoman.dist %>/.git{,*/}*',
-                    '!<%= yeoman.dist %>/Procfile',
-                    '!<%= yeoman.dist %>/package.json',
-                    '!<%= yeoman.dist %>/web.js',
-                    '!<%= yeoman.dist %>/node_modules'
-               ]
-            }]
-        },
-        server: '.tmp'
-    },
 
     // Run some tasks in parallel to speed up build process
     concurrent: {
