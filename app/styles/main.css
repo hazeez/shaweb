@@ -46,6 +46,20 @@ h2.sub-intro-text {
     color: #FFFFFF;
     height: 280px;
 }
+/* creates triangle in the jumbotron*/
+/*.jumbotron:after {
+  content: "";
+  display: block; /* reduce the damage in FF3.0 */
+  /*position: relative;
+  width: 0;
+  margin-left: 50%;
+  margin-top: 40px;
+  bottom: -15px;
+  border-width: 10px 10px 0 ;
+  border-style:solid;
+  border-color: #FFFFFF transparent;
+  }*/
+
 h1.company-name {
     color: #69B52B;
 }
@@ -59,23 +73,9 @@ small.place {
   align-items: center;
 }
 .thumbnail-gallery{
-  margin-top: 50px;
+  margin-top: 25px;
 }
-.category {
-  border: 1px solid #ccc;
-  margin-top: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: "Ubuntu", sans-serif, Arial;
-  background-image: url(../images/tweed_@2X.png);
-  color: #B6B6B6;
 
-}
-.category h6:hover{
-  padding-bottom: 2px;
-  font-weight: 700;
-  color: #69B52B;
-}
 h6{
   letter-spacing: 3px;
   font-size: 14px;
@@ -89,7 +89,50 @@ h6{
           height:auto;
           max-width: 100%;
        }
+/* thumbnail container settings*/
+.thumbnail-gallery .container {
+  max-width: 100%;
+  height: auto;
+  max-height: 220px;
+  overflow: hidden;
+}
 
+.thumbnail-gallery {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 25px;
+} 
+.imgdiv .container{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;  
+}
+
+/*settings for img-category names*/
+.category {
+  padding-top: 5px;
+  border-bottom: 2px solid #aaaaaa;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Ubuntu", sans-serif, Arial;
+  color: black;
+  background-color: #F5F5F5;
+
+}
+
+.category:hover{
+  padding-bottom: 2px;
+  font-weight: 700;
+  border-bottom: 4px solid #434343;
+}
+
+.img-thumbnail {
+  display: block;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
+  border: none;
+}
 
 /* for mobile phones */
 @media (max-width: 480px) { 
