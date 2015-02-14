@@ -99,7 +99,7 @@ h6{
 
 .thumbnail-gallery {
   border-bottom: 1px solid #ccc;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
 } 
 .imgdiv .container{
   width: 100%;
@@ -111,6 +111,7 @@ h6{
 .category {
   padding-top: 5px;
   border-bottom: 2px solid #aaaaaa;
+  margin-top: 15px;
   margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
@@ -134,20 +135,96 @@ h6{
   border: none;
 }
 
+fa {
+  font-family: "Font Awesome", sans-serif, Arial;
+} 
+/*sales and service section*/
+
+.sales-service, .accessory-heading {
+  font-family: "Oswald", sans-serif, Arial;
+  text-transform: uppercase;
+  text-align: center;
+  color: #E03408;
+  letter-spacing: 3px;
+}
+
+/*css for accessory heading*/
+.accessory-heading {
+  margin-top: 30px;
+}
+
+/*css for the metro section*/
+
+.metro-accessories {
+  margin-top: 40px;
+}
+.metro-layout {
+  text-align: center;
+  height: 420px;
+}
+.metro-layout .row {
+  height: 120px;
+} 
+.firstrow-fcell, .thirdrow-tcell {
+  height: 100%;
+  /*background-color: #F5F5F5;*/
+  color: #69B52B;
+  border: .25px solid #ccc;
+}
+.firstrow-scell, .thirdrow-fcell {
+  height: 100%;
+  /*background-color: #F5F5F5;*/
+  color: #E03408;
+  border: .25px solid #ccc;
+}
+.firstrow-tcell, .secondrow-fcell {
+  height: 100%;
+  /*background-color: #F5F5F5;*/
+  color: #434343;
+  border: .25px solid #ccc;
+}
+.secondrow-scell {
+  height: 100%;
+  /*background-color: #F5F5F5;*/
+  color: #69B52B;
+  border: .25px solid #ccc;
+}
+
+.secondrow-tcell, .thirdrow-scell {
+  height: 100%;
+  /*background-color: #F5F5F5;*/
+  color: #434343;
+  border: .25px solid #ccc;
+}
+
+.firstrow-fcell > i , .firstrow-scell > i, .firstrow-tcell > i, 
+.secondrow-fcell > i,.secondrow-scell > i,.secondrow-tcell > i,
+.thirdrow-fcell > i, .thirdrow-scell > i,.thirdrow-tcell > i {
+  margin-top: 15%;
+} 
+
 /* for mobile phones */
 @media (max-width: 480px) { 
         h1 {
           margin-top: 0;
           font-size: 25px;
         }
+        h2 {
+          font-size:20px;
+        }
         h4{
-          font-size: 12px;
           padding-bottom: 20px;
         }
+        .jumbotron {
+          height: auto;
+        } 
         /* make image responsive */
         .img-responsive {
           display: block;
           height:auto;
           max-width: 75%;
         }
+        .navbar-brand, .navbar-nav{
+          margin-left: 20px;
+        } 
 }
