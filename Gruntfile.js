@@ -1,4 +1,4 @@
-// Generated on 2015-02-11 using
+// Generated on 2015-02-14 using
 // generator-webapp 0.5.1
 'use strict';
 
@@ -108,23 +108,18 @@ module.exports = function (grunt) {
 
     // Empties folders to start fresh
     clean: {
-        dist: {
-            files: [{
-                dot: true,
-                src: [
-                    '.tmp',
-                    '<%= yeoman.dist %>/*',
-                    '!<%= yeoman.dist %>/.git{,*/}*',
-                    '!<%= yeoman.dist %>/Procfile',
-                    '!<%= yeoman.dist %>/package.json',
-                    '!<%= yeoman.dist %>/web.js',
-                    '!<%= yeoman.dist %>/node_modules'
-               ]
-            }]
-        },
-        server: '.tmp'
+      dist: {
+        files: [{
+          dot: true,
+          src: [
+            '.tmp',
+            '<%= config.dist %>/*',
+            '!<%= config.dist %>/.git*'
+          ]
+        }]
+      },
+      server: '.tmp'
     },
-
 
     // Make sure code styles are up to par and there are no obvious mistakes
     jshint: {
@@ -257,21 +252,6 @@ module.exports = function (grunt) {
       }
     },
 
-    buildcontrol: {
-    options: {
-        dir: 'dist',
-        commit: true,
-        push: true,
-        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
-    },
-    heroku: {
-        options: {
-            remote: 'git@heroku.com:shanetwork.git',
-            branch: 'master'
-        }
-    }
-    },
-
     // By default, your `index.html`'s <!-- Usemin block --> will take care
     // of minification. These next options are pre-configured if you do not
     // wish to use the Usemin blocks.
@@ -332,7 +312,6 @@ module.exports = function (grunt) {
       }
     },
 
-
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
@@ -367,8 +346,6 @@ module.exports = function (grunt) {
       'watch'
     ]);
   });
-
-  grunt.registerTask('deploy', ['buildcontrol']);
 
   grunt.registerTask('server', function (target) {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
