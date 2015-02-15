@@ -340,7 +340,7 @@ module.exports = function (grunt) {
     },
     pages: {
       options: {
-        remote: 'git@github.com:example_user/example_webapp.git',
+        remote: 'git@github.com:hazeez/shaweb.git',
         branch: 'gh-pages'
       }
     },
