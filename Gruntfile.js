@@ -347,7 +347,7 @@ module.exports = function (grunt) {
     heroku: {
       options: {
         remote: 'git@heroku.com:shanetweb.git',
-        branch: 'master',
+        branch: 'prodtest',
         tag: pkg.version
       }
     },
