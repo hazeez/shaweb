@@ -342,7 +342,8 @@ module.exports = function (grunt) {
       options: {
         remote: 'git@github.com:example_user/example_webapp.git',
         branch: 'gh-pages'
-      },
+      }
+    },
     heroku: {
       options: {
         remote: 'git@heroku.com:shanetweb.git',
@@ -356,9 +357,7 @@ module.exports = function (grunt) {
         branch: 'build'
       }
     }
-  }
-
-  });
+  }});
 
 
   grunt.registerTask('serve', 'start the server and preview your app, --allow-remote for remote access', function (target) {
