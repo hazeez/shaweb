@@ -22,6 +22,9 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+  //package configuration
+  var pkg = require('./package.json');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -325,7 +328,36 @@ module.exports = function (grunt) {
         'imagemin',
         'svgmin'
       ]
+    },
+
+    // Build control tasks
+    buildcontrol: {
+    options: {
+      dir: 'dist',
+      commit: true,
+      push: true,
+      message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
+    },
+    pages: {
+      options: {
+        remote: 'git@github.com:example_user/example_webapp.git',
+        branch: 'gh-pages'
+      },
+    heroku: {
+      options: {
+        remote: 'git@heroku.com:shanetweb.git',
+        branch: 'master',
+        tag: pkg.version
+      }
+    },
+    local: {
+      options: {
+        remote: '../',
+        branch: 'build'
+      }
     }
+  }
+
   });
 
 
