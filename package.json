@@ -27,10 +27,12 @@
     "time-grunt": "^0.4.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=0.10.0",
+    "npm": ">=1.4.*"
   },
   "dependencies": {
     "express": "^4.11.2",
-    "gzippo": "^0.2.0"
+    "gzippo": "^0.2.0",
+    "morgan": "^1.5.1"
   }
 }
