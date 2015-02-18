@@ -41,11 +41,13 @@ h2.sub-intro-text {
 }
 .jumbotron {
     /*background-color: #FFFFFF;*/
-    background-image: url(../images/tweed_@2X.png);
+    background-image: url(../images/electronics1280.jpg);
     text-align: center;
     color: #FFFFFF;
-    height: 280px;
+    height: 300px;
+    background-repeat: no-repeat;
 }
+
 /* creates triangle in the jumbotron*/
 /*.jumbotron:after {
   content: "";
@@ -140,6 +142,7 @@ fa {
 } 
 /*sales and service section*/
 
+
 .sales-service, .accessory-heading {
   font-family: "Oswald", sans-serif, Arial;
   text-transform: uppercase;
@@ -150,7 +153,11 @@ fa {
 
 /*css for accessory heading*/
 .accessory-heading {
-  margin-top: 30px;
+  padding-top: 30px;
+}
+
+.accessories {
+  background-color: #F5F5F5;
 }
 
 /*css for the metro section*/
@@ -170,24 +177,32 @@ fa {
   /*background-color: #F5F5F5;*/
   color: #69B52B;
   border: .25px solid #ccc;
+  border-right: none;
+  border-bottom: none;
 }
 .firstrow-scell, .thirdrow-fcell {
   height: 100%;
   /*background-color: #F5F5F5;*/
   color: #E03408;
   border: .25px solid #ccc;
+  border-right: none;
+  border-bottom: none;
 }
 .firstrow-tcell, .secondrow-fcell {
   height: 100%;
   /*background-color: #F5F5F5;*/
   color: #434343;
   border: .25px solid #ccc;
+  border-right: none;
+  border-bottom: none;
 }
 .secondrow-scell {
   height: 100%;
   /*background-color: #F5F5F5;*/
   color: #69B52B;
   border: .25px solid #ccc;
+  border-right: none;
+  border-bottom: none;
 }
 
 .secondrow-tcell, .thirdrow-scell {
@@ -195,14 +210,69 @@ fa {
   /*background-color: #F5F5F5;*/
   color: #434343;
   border: .25px solid #ccc;
+  border-right: none;
+  border-bottom: none;
 }
+
+.firstrow-tcell, .secondrow-tcell, .thirdrow-tcell {
+  border-right: 1px solid #ccc;
+}
+.thirdrow-fcell, .thirdrow-scell, .thirdrow-tcell {
+  border-bottom: 1px solid #ccc;
+} 
 
 .firstrow-fcell > i , .firstrow-scell > i, .firstrow-tcell > i, 
 .secondrow-fcell > i,.secondrow-scell > i,.secondrow-tcell > i,
 .thirdrow-fcell > i, .thirdrow-scell > i,.thirdrow-tcell > i {
   margin-top: 15%;
 } 
+.firstrow-fcell:hover, .firstrow-scell:hover,.firstrow-tcell:hover,
+.secondrow-fcell:hover, .secondrow-scell:hover,.secondrow-tcell:hover,
+.thirdrow-fcell:hover, .thirdrow-scell:hover,.thirdrow-tcell:hover {
+  background-color: #ffffff;
+}
+.metro-text {
+  margin-left: 20px;
+  font-weight: 300;
+  font-size: 3em;
+  padding-top: auto;
+}
+.metro-text-area h1{
+  /*background-color: red;*/
+  padding-top: 5%;
+} 
+.text-computer, .text-electronic{
+  font-weight: 400;
+} 
+.contact-accessories {
+  margin-left: 20px;
+  margin-top: 20px;
+}
 
+.contact-no, .contact-no-1{
+  font-family: "Ubuntu", sans-serif, Arial;
+  font-weight: 300;
+  font-size: 1.5em;
+  color: #ffffff;
+  padding-top: -20px;
+}
+.contact-no-1 {
+  padding-left: 50px;
+  
+}
+.contact-no {
+  padding-left: 20px;
+}
+.btn-contact-accessories {
+  margin-left: 20px;
+  margin-top: 20px;
+} 
+.btn-success {
+  background-color: green;
+} 
+.btn-success:hover {
+  background-color: #69B52B;
+} 
 /* for mobile phones */
 @media (max-width: 480px) { 
         h1 {
@@ -217,6 +287,8 @@ fa {
         }
         .jumbotron {
           height: auto;
+          background-image: url(../images/tweed_@2X.png);
+          background-repeat: repeat;
         } 
         /* make image responsive */
         .img-responsive {
@@ -226,5 +298,63 @@ fa {
         }
         .navbar-brand, .navbar-nav{
           margin-left: 20px;
+        }
+        .accessories {
+          height: auto;
+        }
+        .metro-second-row, .metro-third-row {
+          margin-top: -30px;
+        }
+        .metro-first-row .fa, .metro-second-row .fa, .metro-third-row .fa{
+          font-size:3em; 
+          text-align:center;
+          padding-top:20px;
+          margin-top: auto;
         } 
+        .firstrow-fcell , .firstrow-scell, .firstrow-tcell,
+        .secondrow-fcell , .secondrow-scell, .secondrow-tcell,
+        .thirdrow-fcell , .thirdrow-scell, .thirdrow-tcell{
+          height:75%;
+        } 
+        .metro-text{
+          font-size: 25px;
+          margin-top: none;
+          padding-top:none;
+        }
+        .metro-text-area {
+          margin-top: -100px;
+          padding-top:none;
+        } 
+}
+
+/* for wide monitors */
+@media (min-width: 1360px) { 
+        h1 {
+          margin-top: 0;
+          padding-top: 100px;
+          font-size: 60px;
+        }
+        h2 {
+          font-size:30px;
+        }
+        h4{
+          padding-bottom: 20px;
+        }
+        .jumbotron {
+          height: 500px;
+          background-image: url(../images/electronics1920.jpg);
+          /*background-repeat: no-repeat;*/
+          
+        } 
+        /* make image responsive */
+        .img-responsive {
+          display: block;
+          height:auto;
+          max-width: 75%;
+        }
+        .navbar-brand, .navbar-nav{
+          margin-left: 20px;
+        }
+         
+         
 }

@@ -9,28 +9,28 @@ $(".cctv-list").hide()
 
 // when the page gets ready
 $(document).ready(function(){
-// on hover show the list div items
-    $(".category-desktop").hover(function(){
+// on click show the list div items
+    $(".category-desktop").click(function(){
         $(".desktop-list").toggle(300);
     });
 
-    $(".category-laptop").hover(function(){
+    $(".category-laptop").click(function(){
         $(".laptop-list").toggle(300);
     });
 
-    $(".category-mobiles").hover(function(){
+    $(".category-mobiles").click(function(){
         $(".mobile-list").toggle(300);
     });
 
-    $(".category-tablet").hover(function(){
+    $(".category-tablet").click(function(){
         $(".tablet-list").toggle(300);
     });
 
-    $(".category-servers").hover(function(){
+    $(".category-servers").click(function(){
         $(".servers-list").toggle(300);
     });
 
-    $(".category-cctv").hover(function(){
+    $(".category-cctv").click(function(){
         $(".cctv-list").toggle(300);
     });
 });
