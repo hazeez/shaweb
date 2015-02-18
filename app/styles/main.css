@@ -143,7 +143,7 @@ fa {
 /*sales and service section*/
 
 
-.sales-service, .accessory-heading {
+.sales-service, .accessory-heading, .services-heading {
   font-family: "Oswald", sans-serif, Arial;
   text-transform: uppercase;
   text-align: center;
@@ -152,12 +152,12 @@ fa {
 }
 
 /*css for accessory heading*/
-.accessory-heading {
+.accessory-heading, .services-heading {
   padding-top: 30px;
 }
 
 .accessories {
-  background-color: #F5F5F5;
+  background-color: #ddd;
 }
 
 /*css for the metro section*/
@@ -191,7 +191,7 @@ fa {
 .firstrow-tcell, .secondrow-fcell {
   height: 100%;
   /*background-color: #F5F5F5;*/
-  color: #434343;
+  color: #212121;
   border: .25px solid #ccc;
   border-right: none;
   border-bottom: none;
@@ -208,7 +208,7 @@ fa {
 .secondrow-tcell, .thirdrow-scell {
   height: 100%;
   /*background-color: #F5F5F5;*/
-  color: #434343;
+  color: #212121;
   border: .25px solid #ccc;
   border-right: none;
   border-bottom: none;
@@ -236,6 +236,7 @@ fa {
   font-weight: 300;
   font-size: 3em;
   padding-top: auto;
+  color: #212121;
 }
 .metro-text-area h1{
   /*background-color: red;*/
@@ -272,7 +273,66 @@ fa {
 } 
 .btn-success:hover {
   background-color: #69B52B;
+}
+/*css for services section*/
+.services {
+  background-image: url(../images/services1280.jpg);
+  background-repeat: no-repeat;
+  height: 500px;
 } 
+.service-text-layout, .service-image-layout {
+  margin-top: 20px;
+  border-left: 5px solid green;
+  background-color: rgba(0,0,0,.3);
+}
+.service-description {
+  font-size: 3em;
+  font-weight: 300;
+  color: #FFFFFF;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}  
+.service-sub-description {
+  font-family: "Ubuntu", sans-serif; Arial;
+  font-weight: 300;
+  color: #ccc;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-left: 2px solid red;
+}
+.service-image-layout {
+  background-color: rgba(0,0,0,.4); 
+  font-family: "Ubuntu", sans-serif, Arial;
+  font-weight: 300;
+  color: #ccc;
+}
+.platform-text {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  color: #FFFFFF;
+  padding-left: 50px;
+}
+.fa-windows {
+  color:blue;
+  padding-left: 100px;
+  /*border: 1px solid red;*/
+}
+.fa-android {
+  color:green;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+.fa-linux {
+  color: yellow;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
+.fa-apple {
+  color: #ccc;
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
 /* for mobile phones */
 @media (max-width: 480px) { 
         h1 {
@@ -324,7 +384,23 @@ fa {
         .metro-text-area {
           margin-top: -100px;
           padding-top:none;
-        } 
+        }
+        .services {
+          margin-top: 20px;
+          background-image: none;
+          background-color: #212121;
+          height: 850px;
+        }
+        .service-text-layout, .service-image-layout {
+          background-color: none;
+        }
+        .service-description{
+          font-size:25px;
+          padding-top: 20px;
+        }
+        .fa-windows, .fa-apple, .fa-linux, .fa-android, .platform-text {
+          padding-left: 25px;
+        }
 }
 
 /* for wide monitors */
@@ -355,6 +431,14 @@ fa {
         .navbar-brand, .navbar-nav{
           margin-left: 20px;
         }
-         
+        .services {
+          background-image:url(../images/services1920.jpg);
+          background-repeat: no-repeat;
+          height: 600px;
+        } 
+        .platform-text {
+          font-weight: 300;
+          padding-top: 110px;
+        }
          
 }
