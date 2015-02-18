@@ -293,7 +293,7 @@ fa {
   padding-bottom: 20px;
 }  
 .service-sub-description {
-  font-family: "Ubuntu", sans-serif; Arial;
+  font-family: "Ubuntu", sans-serif, Arial;
   font-weight: 300;
   color: #ccc;
   padding-top: 10px;
