@@ -143,7 +143,7 @@ fa {
 /*sales and service section*/
 
 
-.sales-service, .accessory-heading, .services-heading {
+.sales-service, .accessory-heading, .services-heading, .locateus-heading {
   font-family: "Oswald", sans-serif, Arial;
   text-transform: uppercase;
   text-align: center;
@@ -155,10 +155,16 @@ fa {
 .accessory-heading, .services-heading {
   padding-top: 30px;
 }
-
-.accessories {
+.locateus-heading {
+  padding-top: 10px;
+  padding-bottom: 10px;
+} 
+.accessories{
   background-color: #ddd;
 }
+.locate-us {
+  background-color: #212121;
+} 
 
 /*css for the metro section*/
 
@@ -314,25 +320,31 @@ fa {
   padding-left: 50px;
 }
 .fa-windows {
-  color:blue;
+  color:#3366FF;
   padding-left: 100px;
   /*border: 1px solid red;*/
 }
 .fa-android {
-  color:green;
+  color:#33CC33;
   padding-left: 50px;
   padding-bottom: 50px;
 }
 .fa-linux {
-  color: yellow;
+  color: #FFFF00;
   padding-left: 50px;
   padding-bottom: 50px;
 }
 .fa-apple {
-  color: #ccc;
+  color: #E6E6E6;
   padding-left: 100px;
   padding-bottom: 50px;
 }
+/* for map section*/
+#map {
+  width: auto;
+  height: 500px;
+  }
+
 /* for mobile phones */
 @media (max-width: 480px) { 
         h1 {
