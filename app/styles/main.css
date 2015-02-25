@@ -319,22 +319,22 @@ fa {
   color: #FFFFFF;
   padding-left: 50px;
 }
-.fa-windows {
+.fa.fa-windows {
   color:#3366FF;
   padding-left: 100px;
   /*border: 1px solid red;*/
 }
-.fa-android {
+.fa.fa-android {
   color:#33CC33;
   padding-left: 50px;
   padding-bottom: 50px;
 }
-.fa-linux {
+.fa.fa-linux {
   color: #FFFF00;
   padding-left: 50px;
   padding-bottom: 50px;
 }
-.fa-apple {
+.fa.fa-apple {
   color: #E6E6E6;
   padding-left: 100px;
   padding-bottom: 50px;
