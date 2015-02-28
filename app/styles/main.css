@@ -418,7 +418,7 @@ fa {
   font-family: "Ubuntu", sans-serif, Arial;
   /*background-color: green;*/
   color: white;
-  height: 200px;
+  height: 220px;
   width: 100%;
   background: rgba(18,18,18,1);
 background: -moz-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
@@ -469,7 +469,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121212', end
 .copyright-text {
   font-family: "Ubuntu", sans-serif, Arial;
   letter-spacing: 0px;
-  font-size: .8em;
+  font-size: .9em;
 } 
 .fa-copyright {
   padding-right: 10px;  

@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <!-- Google maps api -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlbL6Rnx3XD9zF2bSRnTDrpM3nwOR37s0&sensor=true"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlbL6Rnx3XD9zF2bSRnTDrpM3nwOR37s0&sensor=false"></script>
 
     <!-- map script -->
 
@@ -42,7 +42,7 @@
 
                     // How you would like to style the map. 
                     // This is where you would paste any style found on Snazzy Maps.
-                    // styles: [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#7dcdcd"}]}]
+                    styles: [{"featureType":"landscape.natural","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"color":"#e0efef"}]},{"featureType":"poi","elementType":"geometry.fill","stylers":[{"visibility":"on"},{"hue":"#1900ff"},{"color":"#c0e8e8"}]},{"featureType":"road","elementType":"geometry","stylers":[{"lightness":100},{"visibility":"simplified"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.line","elementType":"geometry","stylers":[{"visibility":"on"},{"lightness":700}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#7dcdcd"}]}]
                 };
 
                 // Get the HTML DOM element that will contain your map 
@@ -97,8 +97,9 @@
               <a class="nav-menu-text" href="#client">Clients</a>
             </li>
             <li>
-              <a href="#locate" class="nav-menu-text">Contact</a>
+              <a href="#map" class="nav-menu-text">Contact</a>
             </li>
+          </ul>
         </div>
       <!-- container ends here -->
       </div>
@@ -469,7 +470,7 @@
       <!-- end of locate us heading div -->
     </div>
 
-    <div class="container" id="locate">
+    <div class="container" id="map">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 map-layout">
       <!-- end of div -->
       </div>
