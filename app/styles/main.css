@@ -1,7 +1,15 @@
 .navbar {
-  background-color: #69B52B;
   width: 100%;
   margin-bottom: 0;
+  
+  background: rgba(73,164,40,0.99);
+  background: -moz-linear-gradient(left, rgba(73,164,40,0.99) 0%, rgba(80,182,43,0.99) 21%, rgba(73,164,40,0.99) 45%, rgba(80,182,43,1) 70%, rgba(73,164,40,1) 91%, rgba(80,182,43,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(73,164,40,0.99)), color-stop(21%, rgba(80,182,43,0.99)), color-stop(45%, rgba(73,164,40,0.99)), color-stop(70%, rgba(80,182,43,1)), color-stop(91%, rgba(73,164,40,1)), color-stop(100%, rgba(80,182,43,1)));
+  background: -webkit-linear-gradient(left, rgba(73,164,40,0.99) 0%, rgba(80,182,43,0.99) 21%, rgba(73,164,40,0.99) 45%, rgba(80,182,43,1) 70%, rgba(73,164,40,1) 91%, rgba(80,182,43,1) 100%);
+  background: -o-linear-gradient(left, rgba(73,164,40,0.99) 0%, rgba(80,182,43,0.99) 21%, rgba(73,164,40,0.99) 45%, rgba(80,182,43,1) 70%, rgba(73,164,40,1) 91%, rgba(80,182,43,1) 100%);
+  background: -ms-linear-gradient(left, rgba(73,164,40,0.99) 0%, rgba(80,182,43,0.99) 21%, rgba(73,164,40,0.99) 45%, rgba(80,182,43,1) 70%, rgba(73,164,40,1) 91%, rgba(80,182,43,1) 100%);
+  background: linear-gradient(to right, rgba(73,164,40,0.99) 0%, rgba(80,182,43,0.99) 21%, rgba(73,164,40,0.99) 45%, rgba(80,182,43,1) 70%, rgba(73,164,40,1) 91%, rgba(80,182,43,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49a428', endColorstr='#50b62b', GradientType=1 );
 }
 a, .intro-description{
     font-family: "Ubuntu", sans-serif, Arial;
@@ -10,19 +18,40 @@ a, .intro-description{
 a {
   color: white;
 }
+.nav-menu-text {
+  font-family: "Oswald", "Ubuntu",sans-serif, Arial;
+  text-transform: uppercase;
+} 
 .contact-bar {
-  width: 100%;
-  height: 30px;
+  color: #FFF;
+  width: auto;
+  /*height: 30px;*/
+  height:auto;
   margin: 0;
-  background-color: rgb(152,199,61);
-  padding-bottom: 30px;
+  background: rgba(17,17,17,1);
+  background: -moz-linear-gradient(left, rgba(17,17,17,1) 0%, rgba(43,43,43,1) 25%, rgba(28,28,28,1) 41%, rgba(17,17,17,1) 58%, rgba(43,43,43,1) 70%, rgba(28,28,28,1) 85%, rgba(19,19,19,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(17,17,17,1)), color-stop(25%, rgba(43,43,43,1)), color-stop(41%, rgba(28,28,28,1)), color-stop(58%, rgba(17,17,17,1)), color-stop(70%, rgba(43,43,43,1)), color-stop(85%, rgba(28,28,28,1)), color-stop(100%, rgba(19,19,19,1)));
+  background: -webkit-linear-gradient(left, rgba(17,17,17,1) 0%, rgba(43,43,43,1) 25%, rgba(28,28,28,1) 41%, rgba(17,17,17,1) 58%, rgba(43,43,43,1) 70%, rgba(28,28,28,1) 85%, rgba(19,19,19,1) 100%);
+  background: -o-linear-gradient(left, rgba(17,17,17,1) 0%, rgba(43,43,43,1) 25%, rgba(28,28,28,1) 41%, rgba(17,17,17,1) 58%, rgba(43,43,43,1) 70%, rgba(28,28,28,1) 85%, rgba(19,19,19,1) 100%);
+  background: -ms-linear-gradient(left, rgba(17,17,17,1) 0%, rgba(43,43,43,1) 25%, rgba(28,28,28,1) 41%, rgba(17,17,17,1) 58%, rgba(43,43,43,1) 70%, rgba(28,28,28,1) 85%, rgba(19,19,19,1) 100%);
+  background: linear-gradient(to right, rgba(17,17,17,1) 0%, rgba(43,43,43,1) 25%, rgba(28,28,28,1) 41%, rgba(17,17,17,1) 58%, rgba(43,43,43,1) 70%, rgba(28,28,28,1) 85%, rgba(19,19,19,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#111111', endColorstr='#131313', GradientType=1 );
 }
 .contact-number{
-  padding-right: 25px;
+  font-family: "Ubuntu", sans-serif, Arial;
 }
-.contact-number .fa-phone-square {
-  padding-right: 5px;
+.contact-number .fa-phone-square, .contact-number .fa-envelope{
+  padding-right: 10px;
 }
+.tel-number {
+  text-align: right;
+} 
+.mobile-number {
+  text-align: center;
+}
+.email-address {
+  text-align: left;
+} 
 /* remove the dotted outline from the active menu item */
 .dropdown a{
   outline: none;
@@ -111,16 +140,15 @@ h6{
 
 /*settings for img-category names*/
 .category {
-  padding-top: 5px;
+  /*padding-top: 5px;*/
   border-bottom: 2px solid #aaaaaa;
-  margin-top: 15px;
+  /*margin-top: 15px;*/
   margin-bottom: 10px;
   text-align: center;
   text-transform: uppercase;
-  font-family: "Ubuntu", sans-serif, Arial;
+  font-family: "Oswald", sans-serif, Arial;
   color: black;
-  background-color: #F5F5F5;
-
+  /*background-color: #F5F5F5;*/
 }
 
 .category:hover{
@@ -143,24 +171,29 @@ fa {
 /*sales and service section*/
 
 
-.sales-service, .accessory-heading, .services-heading, .locateus-heading {
+.sales-heading, .accessory-heading, .services-heading, .locateus-heading, .clientele-heading,
+.testimonial-heading {
   font-family: "Oswald", sans-serif, Arial;
   text-transform: uppercase;
   text-align: center;
   color: #E03408;
   letter-spacing: 3px;
 }
+.sales-heading{
+  padding-top: 10px;
+}
 
 /*css for accessory heading*/
-.accessory-heading, .services-heading {
+.accessory-heading, .services-heading, .clientele-heading, .testimonial-heading {
   padding-top: 30px;
 }
 .locateus-heading {
-  padding-top: 10px;
+  padding-top: 20px;
   padding-bottom: 10px;
 } 
 .accessories{
-  background-color: #ddd;
+  background-color: #eee;
+
 }
 .locate-us {
   background-color: #212121;
@@ -278,11 +311,16 @@ fa {
   background-color: green;
 } 
 .btn-success:hover {
-  background-color: #69B52B;
+  /*background-color: #69B52B;*/
 }
 /*css for services section*/
 .services {
   background-image: url(../images/services1280.jpg);
+  background-repeat: no-repeat;
+  height: 500px;
+} 
+.clientele {
+  background-image: url(../images/clients_1280.jpeg);
   background-repeat: no-repeat;
   height: 500px;
 } 
@@ -291,6 +329,11 @@ fa {
   border-left: 5px solid green;
   background-color: rgba(0,0,0,.3);
 }
+/*.clientele-text-layout {
+  width: 100%;
+  height: 400px;
+  background-color: rgba(255,255,255,0.3);
+}*/
 .service-description {
   font-size: 3em;
   font-weight: 300;
@@ -339,12 +382,101 @@ fa {
   padding-left: 100px;
   padding-bottom: 50px;
 }
+.fa.fa-user {
+  padding-left: 50px;
+  padding-right: 50px;
+  color: #212121;
+}
+.testimonials {
+  background-color: #eee;
+  height: 350px;
+}
+.clientele-text-layout {
+  padding-left : 200px;
+  font-family: "Oswald",sans-serif, Arial;
+}
+.testimonial-text-layout {
+  width: 100%;
+}
+.blockquote-text-1, .blockquote-text-2 {
+  font-family: "Oswald", "Ubuntu", sans-serif, Arial;
+  color: #212121;
+  border-color: #212121;
+} 
+.customer-sign {
+  padding-top: 10px;
+  font-family: "Ubuntu", sans-serif, Arial;
+  color: #E03408;
+} 
 /* for map section*/
 #map {
   width: auto;
   height: 500px;
   }
+.footer {
+  padding-top: 25px;
+  font-family: "Ubuntu", sans-serif, Arial;
+  /*background-color: green;*/
+  color: white;
+  height: 200px;
+  width: 100%;
+  background: rgba(18,18,18,1);
+background: -moz-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(18,18,18,1)), color-stop(22%, rgba(15,15,15,1)), color-stop(43%, rgba(15,15,15,1)), color-stop(58%, rgba(18,18,18,1)), color-stop(70%, rgba(15,15,15,1)), color-stop(85%, rgba(28,28,28,1)), color-stop(100%, rgba(18,18,18,1)));
+background: -webkit-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
+background: -o-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
+background: -ms-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
+background: linear-gradient(to right, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121212', endColorstr='#121212', GradientType=1 );
+} 
+.address {
+  /*border-right: 1px solid #fff;*/
+  height: 100px;
+}
+.contacts {
+  /*border-right: 1px solid #fff ;*/
+  height: 100px;
+  
+}
+.address, .get-in-touch-heading, .get-in-touch, .stay-connected {
+  font-family: "Oswald", "Ubuntu", sans-serif, Arial;
+  color: #ddd;
+} 
+.address-heading, .stay-connected, .get-in-touch-heading {
+  color: #E03408
+} 
+.get-in-touch h6 {
+  letter-spacing: 0px;
+} 
 
+.contacts .fa-phone-square{
+  padding-right: 20px;
+}
+.contacts .fa-envelope {
+ padding-right: 12px; 
+} 
+.facebook {
+  padding: 20px 20px 0 0;
+} 
+
+.twitter, .google-plus {
+  padding: 20px 20px 0 20px;
+}
+.copyright {
+  padding-top: 30px;
+  padding-left: 15px;
+}
+.copyright-text {
+  font-family: "Ubuntu", sans-serif, Arial;
+  letter-spacing: 0px;
+  font-size: .8em;
+} 
+.fa-copyright {
+  padding-right: 10px;  
+}
+.social-media-icons {
+  padding-top: 20px;
+} 
 /* for mobile phones */
 @media (max-width: 480px) { 
         h1 {
@@ -357,6 +489,9 @@ fa {
         h4{
           padding-bottom: 20px;
         }
+        .tel-number, .mobile-number, .email-address {
+          text-align: left;
+        } 
         .jumbotron {
           height: auto;
           background-image: url(../images/tweed_@2X.png);
@@ -410,9 +545,30 @@ fa {
           font-size:25px;
           padding-top: 20px;
         }
-        .fa-windows, .fa-apple, .fa-linux, .fa-android, .platform-text {
+        .fa.fa-windows, .fa.fa-apple, .fa.fa-linux, .fa.fa-android, .platform-text {
           padding-left: 25px;
         }
+        .testimonials {
+          height: 900px;
+        }
+        .clientele {
+          background: none;
+          background-color: #fff;
+        }
+        .clientele-text-layout {
+          padding-left: 10px;
+        }
+        .fa.fa-user {
+          padding-left: 10px;
+          padding-right: 20px;
+        }
+        .footer {
+          height: auto;
+        } 
+        .contacts, .stay-connected, .social-media{
+          padding-top: 50px;
+        } 
+        
 }
 
 /* for wide monitors */
@@ -448,9 +604,17 @@ fa {
           background-repeat: no-repeat;
           height: 600px;
         } 
+        .clientele {
+          background-image: url(../images/clients_1920.jpeg);
+          background-repeat: no-repeat;
+          height: 600px;
+        } 
         .platform-text {
           font-weight: 300;
           padding-top: 110px;
         }
-         
+        .clientele-text-layout {
+          padding-left : 100px;
+        }
 }
+         
