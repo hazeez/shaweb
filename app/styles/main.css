@@ -12,8 +12,8 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49a428', endColorstr='#50b62b', GradientType=1 );
 }
 a, .intro-description{
-    font-family: "Ubuntu", sans-serif, Arial;
-    font-weight: 300;
+  font-family: "Ubuntu", sans-serif, Arial;
+  font-weight: 300;
 }
 a {
   color: white;
@@ -69,12 +69,12 @@ h2.sub-intro-text {
 
 }
 .jumbotron {
-    /*background-color: #FFFFFF;*/
-    background-image: url(../images/electronics1280.jpg);
-    text-align: center;
-    color: #FFFFFF;
-    height: 300px;
-    background-repeat: no-repeat;
+  /*background-color: #FFFFFF;*/
+  background-image: url(../images/electronics1280.jpg);
+  text-align: center;
+  color: #FFFFFF;
+  height: 300px;
+  background-repeat: no-repeat;
 }
 
 /* creates triangle in the jumbotron*/
@@ -91,17 +91,17 @@ h2.sub-intro-text {
   border-color: #FFFFFF transparent;
   }*/
 
-h1.company-name {
+  h1.company-name {
     color: #69B52B;
-}
-small.place {
+  }
+  small.place {
     color: #FFFFFF;
-}
-.vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-  display: flex;
-  align-items: center;
+  }
+  .vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+display: flex;
+align-items: center;
 }
 .thumbnail-gallery{
   margin-top: 25px;
@@ -116,10 +116,10 @@ h6{
   font-size: 12px;
 }
 .img-responsive {
-          display: block;
-          height:auto;
-          max-width: 100%;
-       }
+  display: block;
+  height:auto;
+  max-width: 100%;
+}
 /* thumbnail container settings*/
 .thumbnail-gallery .container {
   max-width: 100%;
@@ -329,133 +329,135 @@ fa {
   border-left: 5px solid green;
   background-color: rgba(0,0,0,.3);
 }
-/*.clientele-text-layout {
-  width: 100%;
-  height: 400px;
-  background-color: rgba(255,255,255,0.3);
-}*/
-.service-description {
-  font-size: 3em;
-  font-weight: 300;
-  color: #FFFFFF;
-  padding-left: 20px;
-  padding-bottom: 20px;
-}  
-.service-sub-description {
-  font-family: "Ubuntu", sans-serif, Arial;
-  font-weight: 300;
-  color: #ccc;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-bottom: 10px;
-  border-left: 2px solid red;
-}
-.service-image-layout {
-  background-color: rgba(0,0,0,.4); 
-  font-family: "Ubuntu", sans-serif, Arial;
-  font-weight: 300;
-  color: #ccc;
-}
-.platform-text {
-  padding-top: 30px;
-  padding-bottom: 20px;
-  color: #FFFFFF;
-  padding-left: 50px;
-}
-.fa.fa-windows {
-  color:#3366FF;
-  padding-left: 100px;
-  /*border: 1px solid red;*/
-}
-.fa.fa-android {
-  color:#33CC33;
-  padding-left: 50px;
-  padding-bottom: 50px;
-}
-.fa.fa-linux {
-  color: #FFFF00;
-  padding-left: 50px;
-  padding-bottom: 50px;
-}
-.fa.fa-apple {
-  color: #E6E6E6;
-  padding-left: 100px;
-  padding-bottom: 50px;
-}
-.fa.fa-user {
-  padding-left: 50px;
-  padding-right: 50px;
-  color: #212121;
-}
-.testimonials {
-  background-color: #eee;
-  height: 350px;
-}
-.clientele-text-layout {
-  padding-left : 200px;
-  font-family: "Oswald",sans-serif, Arial;
-}
-.testimonial-text-layout {
-  width: 100%;
-}
-.blockquote-text-1, .blockquote-text-2 {
-  font-family: "Oswald", "Ubuntu", sans-serif, Arial;
-  color: #212121;
-  border-color: #212121;
-} 
-.customer-sign {
-  padding-top: 10px;
-  font-family: "Ubuntu", sans-serif, Arial;
-  color: #E03408;
-} 
-/* for map section*/
-#map {
-  width: auto;
-  height: 500px;
-  }
-.footer {
-  padding-top: 25px;
-  font-family: "Ubuntu", sans-serif, Arial;
-  /*background-color: green;*/
-  color: white;
-  height: 220px;
-  width: 100%;
-  background: rgba(18,18,18,1);
-background: -moz-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(18,18,18,1)), color-stop(22%, rgba(15,15,15,1)), color-stop(43%, rgba(15,15,15,1)), color-stop(58%, rgba(18,18,18,1)), color-stop(70%, rgba(15,15,15,1)), color-stop(85%, rgba(28,28,28,1)), color-stop(100%, rgba(18,18,18,1)));
-background: -webkit-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
-background: -o-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
-background: -ms-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
-background: linear-gradient(to right, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121212', endColorstr='#121212', GradientType=1 );
-} 
-.address {
-  /*border-right: 1px solid #fff;*/
-  height: 100px;
-}
-.contacts {
-  /*border-right: 1px solid #fff ;*/
-  height: 100px;
-  
-}
-.address, .get-in-touch-heading, .get-in-touch, .stay-connected {
-  font-family: "Oswald", "Ubuntu", sans-serif, Arial;
-  color: #ddd;
-} 
-.address-heading, .stay-connected, .get-in-touch-heading {
-  color: #E03408
-} 
-.get-in-touch h6 {
-  letter-spacing: 0px;
-} 
 
-.contacts .fa-phone-square{
-  padding-right: 20px;
-}
-.contacts .fa-envelope {
- padding-right: 12px; 
-} 
-.facebook {
+.clientele-text-layout {
+  width: 60%;
+  height: 400px;
+  /*background-color: rgba(105,181,43,0.3);*/
+  }
+  .service-description {
+    font-size: 3em;
+    font-weight: 300;
+    color: #FFFFFF;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }  
+  .service-sub-description {
+    font-family: "Ubuntu", sans-serif, Arial;
+    font-weight: 300;
+    color: #ccc;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    border-left: 2px solid red;
+  }
+  .service-image-layout {
+    background-color: rgba(0,0,0,.4); 
+    font-family: "Ubuntu", sans-serif, Arial;
+    font-weight: 300;
+    color: #ccc;
+  }
+  .platform-text {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    color: #FFFFFF;
+    padding-left: 50px;
+  }
+  .fa.fa-windows {
+    color:#3366FF;
+    padding-left: 100px;
+    /*border: 1px solid red;*/
+  }
+  .fa.fa-android {
+    color:#33CC33;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+  .fa.fa-linux {
+    color: #FFFF00;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+  .fa.fa-apple {
+    color: #E6E6E6;
+    padding-left: 100px;
+    padding-bottom: 50px;
+  }
+  .fa.fa-user {
+    padding-left: 50px;
+    padding-right: 50px;
+    color: #212121;
+  }
+  .testimonials {
+    background-color: #eee;
+    height: 350px;
+  }
+  .clientele-text-layout {
+    padding-left : 50px;
+    font-family: "Oswald",sans-serif, Arial;
+    
+  }
+  .testimonial-text-layout {
+    width: 100%;
+  }
+  .blockquote-text-1, .blockquote-text-2 {
+    font-family: "Oswald", "Ubuntu", sans-serif, Arial;
+    color: #212121;
+    border-color: #212121;
+  } 
+  .customer-sign {
+    padding-top: 10px;
+    font-family: "Ubuntu", sans-serif, Arial;
+    color: #E03408;
+  } 
+  /* for map section*/
+  #map {
+    width: auto;
+    height: 500px;
+  }
+  .footer {
+    padding-top: 25px;
+    font-family: "Ubuntu", sans-serif, Arial;
+    /*background-color: green;*/
+    color: white;
+    height: 220px;
+    width: 100%;
+    background: rgba(18,18,18,1);
+    background: -moz-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(18,18,18,1)), color-stop(22%, rgba(15,15,15,1)), color-stop(43%, rgba(15,15,15,1)), color-stop(58%, rgba(18,18,18,1)), color-stop(70%, rgba(15,15,15,1)), color-stop(85%, rgba(28,28,28,1)), color-stop(100%, rgba(18,18,18,1)));
+    background: -webkit-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
+    background: -o-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
+    background: -ms-linear-gradient(left, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
+    background: linear-gradient(to right, rgba(18,18,18,1) 0%, rgba(15,15,15,1) 22%, rgba(15,15,15,1) 43%, rgba(18,18,18,1) 58%, rgba(15,15,15,1) 70%, rgba(28,28,28,1) 85%, rgba(18,18,18,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121212', endColorstr='#121212', GradientType=1 );
+  } 
+  .address {
+    /*border-right: 1px solid #fff;*/
+    height: 100px;
+  }
+  .contacts {
+    /*border-right: 1px solid #fff ;*/
+    height: 100px;
+    
+  }
+  .address, .get-in-touch-heading, .get-in-touch, .stay-connected {
+    font-family: "Oswald", "Ubuntu", sans-serif, Arial;
+    color: #ddd;
+  } 
+  .address-heading, .stay-connected, .get-in-touch-heading {
+    color: #E03408
+  } 
+  .get-in-touch h6 {
+    letter-spacing: 0px;
+  } 
+
+  .contacts .fa-phone-square{
+    padding-right: 20px;
+  }
+  .contacts .fa-envelope {
+   padding-right: 12px; 
+ } 
+ .facebook {
   padding: 20px 20px 0 0;
 } 
 
@@ -479,142 +481,154 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121212', end
 } 
 /* for mobile phones */
 @media (max-width: 480px) { 
-        h1 {
-          margin-top: 0;
-          font-size: 25px;
-        }
-        h2 {
-          font-size:20px;
-        }
-        h4{
-          padding-bottom: 20px;
-        }
-        .tel-number, .mobile-number, .email-address {
-          text-align: left;
-        } 
-        .jumbotron {
-          height: auto;
-          background-image: url(../images/tweed_@2X.png);
-          background-repeat: repeat;
-        } 
-        /* make image responsive */
-        .img-responsive {
-          display: block;
-          height:auto;
-          max-width: 75%;
-        }
-        .navbar-brand, .navbar-nav{
-          margin-left: 20px;
-        }
-        .accessories {
-          height: auto;
-        }
-        .metro-second-row, .metro-third-row {
-          margin-top: -30px;
-        }
-        .metro-first-row .fa, .metro-second-row .fa, .metro-third-row .fa{
-          font-size:3em; 
-          text-align:center;
-          padding-top:20px;
-          margin-top: auto;
-        } 
-        .firstrow-fcell , .firstrow-scell, .firstrow-tcell,
-        .secondrow-fcell , .secondrow-scell, .secondrow-tcell,
-        .thirdrow-fcell , .thirdrow-scell, .thirdrow-tcell{
-          height:75%;
-        } 
-        .metro-text{
-          font-size: 25px;
-          margin-top: none;
-          padding-top:none;
-        }
-        .metro-text-area {
-          margin-top: -100px;
-          padding-top:none;
-        }
-        .services {
-          margin-top: 20px;
-          background-image: none;
-          background-color: #212121;
-          height: 850px;
-        }
-        .service-text-layout, .service-image-layout {
-          background-color: none;
-        }
-        .service-description{
-          font-size:25px;
-          padding-top: 20px;
-        }
-        .fa.fa-windows, .fa.fa-apple, .fa.fa-linux, .fa.fa-android, .platform-text {
-          padding-left: 25px;
-        }
-        .testimonials {
-          height: 900px;
-        }
-        .clientele {
-          background: none;
-          background-color: #fff;
-        }
-        .clientele-text-layout {
-          padding-left: 10px;
-        }
-        .fa.fa-user {
-          padding-left: 10px;
-          padding-right: 20px;
-        }
-        .footer {
-          height: auto;
-        } 
-        .contacts, .stay-connected, .social-media{
-          padding-top: 50px;
-        } 
-        
+  h1 {
+    margin-top: 0;
+    font-size: 25px;
+  }
+  h2 {
+    font-size:20px;
+  }
+  h4{
+    padding-bottom: 20px;
+  }
+  .tel-number, .mobile-number, .email-address {
+    text-align: left;
+  } 
+  .jumbotron {
+    height: auto;
+    background-image: url(../images/tweed_@2X.png);
+    background-repeat: repeat;
+  } 
+  /* make image responsive */
+  .img-responsive {
+    display: block;
+    height:auto;
+    max-width: 75%;
+  }
+  .navbar-brand, .navbar-nav{
+    margin-left: 20px;
+  }
+  .accessories {
+    height: auto;
+  }
+  .metro-second-row, .metro-third-row {
+    margin-top: -30px;
+  }
+  .metro-first-row .fa, .metro-second-row .fa, .metro-third-row .fa{
+    font-size:3em; 
+    text-align:center;
+    padding-top:20px;
+    margin-top: auto;
+  } 
+  .firstrow-fcell , .firstrow-scell, .firstrow-tcell,
+  .secondrow-fcell , .secondrow-scell, .secondrow-tcell,
+  .thirdrow-fcell , .thirdrow-scell, .thirdrow-tcell{
+    height:75%;
+  } 
+  .metro-text{
+    font-size: 25px;
+    margin-top: none;
+    padding-top:none;
+  }
+  .metro-text-area {
+    margin-top: -100px;
+    padding-top:none;
+  }
+  .services {
+    margin-top: 20px;
+    background-image: none;
+    background-color: #212121;
+    height: 850px;
+  }
+  .service-text-layout, .service-image-layout {
+    background-color: none;
+  }
+  .service-description{
+    font-size:25px;
+    padding-top: 20px;
+  }
+  .fa.fa-windows, .fa.fa-apple, .fa.fa-linux, .fa.fa-android, .platform-text {
+    padding-left: 25px;
+  }
+  .testimonials {
+    height: 900px;
+  }
+  .clientele {
+    background: none;
+    background-color: #fff;
+    height: 450px;
+  }
+  .clientele-text-layout {
+    padding-left: 0px;
+    background: none;
+    width: 100%;
+    
+  }
+  .fa.fa-user {
+    padding-left: 10px;
+    padding-right: 20px;
+  }
+  .footer {
+    height: auto;
+  } 
+  .contacts, .stay-connected, .social-media{
+    padding-top: 50px;
+  } 
+  .clientele-text {
+    padding-top: 2px;
+    font-size: 13px;
+  }
+  
 }
 
 /* for wide monitors */
 @media (min-width: 1360px) { 
-        h1 {
-          margin-top: 0;
-          padding-top: 100px;
-          font-size: 60px;
-        }
-        h2 {
-          font-size:30px;
-        }
-        h4{
-          padding-bottom: 20px;
-        }
-        .jumbotron {
-          height: 500px;
-          background-image: url(../images/electronics1920.jpg);
-          /*background-repeat: no-repeat;*/
-          
-        } 
-        /* make image responsive */
-        .img-responsive {
-          display: block;
-          height:auto;
-          max-width: 75%;
-        }
-        .navbar-brand, .navbar-nav{
-          margin-left: 20px;
-        }
-        .services {
-          background-image:url(../images/services1920.jpg);
-          background-repeat: no-repeat;
-          height: 600px;
-        } 
-        .clientele {
-          background-image: url(../images/clients_1920.jpeg);
-          background-repeat: no-repeat;
-          height: 600px;
-        } 
-        .platform-text {
-          font-weight: 300;
-          padding-top: 110px;
-        }
-        .clientele-text-layout {
-          padding-left : 100px;
-        }
+  h1 {
+    margin-top: 0;
+    padding-top: 100px;
+    font-size: 60px;
+  }
+  h2 {
+    font-size:30px;
+  }
+  h4{
+    padding-bottom: 20px;
+  }
+  .jumbotron {
+    height: 500px;
+    background-image: url(../images/electronics1920.jpg);
+    /*background-repeat: no-repeat;*/
+    
+  } 
+  /* make image responsive */
+  .img-responsive {
+    display: block;
+    height:auto;
+    max-width: 75%;
+  }
+  .navbar-brand, .navbar-nav{
+    margin-left: 20px;
+  }
+  .services {
+    background-image:url(../images/services1920.jpg);
+    background-repeat: no-repeat;
+    height: 600px;
+  } 
+  .clientele {
+    background-image: url(../images/clients_1920.jpeg);
+    background-repeat: no-repeat;
+    height: 600px;
+  } 
+  .platform-text {
+    font-weight: 300;
+    padding-top: 0px;
+  }
+  .clientele-text-layout {
+    padding-left : 300px;
+    /*max-width: 1200px;*/
+  }
+  /*.fa.fa-windows, .fa.fa-apple, .fa.fa-linux, .fa.fa-android {
+    padding-left: 25px;
+  } */
+
 }
-         
