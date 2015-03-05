@@ -132,10 +132,11 @@ h6{
   border-bottom: 1px solid #ccc;
   padding-bottom: 40px;
 } 
-.imgdiv .container{
+.imgdiv.container{
   width: 100%;
   height: 100%;
   overflow: hidden;  
+  background-color: #FFF;
 }
 
 /*settings for img-category names*/
@@ -163,6 +164,7 @@ h6{
   margin-top: auto;
   margin-right: auto;
   border: none;
+  overflow: hidden;
 }
 
 fa {
@@ -326,13 +328,11 @@ fa {
 .service-text-layout, .service-image-layout {
   margin-top: 20px;
   border-left: 5px solid green;
-  background-color: rgba(0,0,0,.3);
+  /*background-color: rgba(0,0,0,.3);*/
 }
 
 .clientele-text-layout {
-  width: 60%;
-  height: 400px;
-  /*background-color: rgba(105,181,43,0.3);*/
+  width: 100%;
   }
   .service-description {
     font-size: 3em;
@@ -351,7 +351,7 @@ fa {
     border-left: 2px solid red;
   }
   .service-image-layout {
-    background-color: rgba(0,0,0,.4); 
+    /*background-color: rgba(0,0,0,.4); */
     font-family: "Ubuntu", sans-serif, Arial;
     font-weight: 300;
     color: #ccc;
@@ -359,7 +359,7 @@ fa {
   .platform-text {
     padding-top: 30px;
     padding-bottom: 20px;
-    color: #FFFFFF;
+    color: #E03408;
     padding-left: 50px;
   }
   .fa.fa-windows {
@@ -389,7 +389,7 @@ fa {
   }
   .testimonials {
     background-color: #eee;
-    height: 350px;
+    height: auto;
   }
   .clientele-text-layout {
     padding-left : 50px;
@@ -596,12 +596,13 @@ fa {
   .clientele {
     background: none;
     background-color: #fff;
-    height: 450px;
+    height: auto;
   }
   .clientele-text-layout {
     padding-left: 0px;
     background: none;
-    width: 100%;
+    /*width: 100%;*/
+    width: auto;
     
   }
   .fa.fa-user {
@@ -621,6 +622,10 @@ fa {
   .cd-top {
     height: 30px;
     width: 30px;
+  }
+  .tablet-list, .cctv-list, .servers-list, .laptop-list, .desktop-list, .mobile-list {
+   margin-left: -20px;
+
   }
 }
 
